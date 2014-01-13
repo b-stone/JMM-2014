@@ -20,7 +20,7 @@ The slides need MathJax to translate the LaTeX to html.  The easiest way to get 
 user:~/JMM-2014$ git clone https://github.com/mathjax/MathJax.git
 </pre>
 
-This creates a directory 'MathJax'. Depending on your OS, you might have to change the folder name to 'mathjax'. 
+This creates a directory 'MathJax' in the 'JMM-2014' folder. Depending on your OS, you might have to change the folder name to 'mathjax'. 
 
 h3. View
 
