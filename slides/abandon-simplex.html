@@ -17,7 +17,7 @@
     <script type="text/javascript" src="../js/slide.js"></script>
 
    <script type="text/javascript">
-      var substeps = ['one', 'two', 'three'];
+      var substeps = ['one', 'two'	];
 
       function step(cur_step) {
         d3.select("#" + cur_step).style("display", "inherit")
@@ -29,14 +29,17 @@
 	
     <h2>Abandoning the simplex for the cone</h2>
 
+	<div id='one', style='display:none;'>
 	The cone of Betti diagrams has a natural multiplication operation induced by the tensor product operation on complexes.
-
-	<h1 class="small">Definition</h1>
-	Let $\beta$ and $\beta'$ be Betti diagrams. The tensor product of $\beta$ and $\beta'$ is the diagram $\beta \cdot \beta'$ defined by
+	</div>
+	<br>
+	<div id='two', style='display:none;'>
+	<h1 class="small">Tensor Product</h1>
+	<p class='mytab'>Let $\beta$ and $\beta'$ be Betti diagrams. The tensor product of $\beta$ and $\beta'$ is the diagram $\beta \cdot \beta'$ defined by</p>
 	\[
 	(\beta \cdot \beta')_{i,j} 
 	= \sum_{\substack{i_1+i_2=i\\j_1+j_2=j}}\beta_{i_1,j_1}\cdot\beta_{i_2,j_2}'.
 	\]
-
+	</div>
   </body>
 </html>

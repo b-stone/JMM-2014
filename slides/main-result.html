@@ -16,14 +16,14 @@
     <script type="text/javascript" src="../js/d3.v3.js"></script>
     <script type="text/javascript" src="../js/slide.js"></script>
 
-   <script type="text/javascript">
+<!--   <script type="text/javascript">
       var substeps = ['one', 'two', 'three'];
 
       function step(cur_step) {
         d3.select("#" + cur_step).style("display", "inherit")
       };
     </script>
-
+-->
   </head>
   <body>
 	
@@ -32,8 +32,8 @@
 	<h1 class="small">Theorem (GJMRSW 2013)</h1>
 
 <blockquote>
-	For degree sequences ${\bf d}^1,\ldots,{\bf d}^r$, and $A_i=\Delta {\bf d}^i$, we have
-	\[\prod_{i=1}^r \pi({\bf d}^i)=\sum_{\text{shuffles }\sigma}\pi(\Sigma(\sigma,d^1_0+\cdots+d^r_0)).\]
+	For degree sequences $${\bf d}^1,\ldots,{\bf d}^r,$$ and first differences $A_i=\Delta {\bf d}^i$, we have
+	\[\prod_{i=1}^r \pi({\bf d}^i)=\sum_{\stackrel{\text{shuffles }\sigma}{\Tiny \text{of }A_1,\ldots,A_r}}\pi(\mathsf\Sigma(\sigma,d^1_0+\cdots+d^r_0)).\]
 </blockquote>
 
   </body>
