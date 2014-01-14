@@ -17,7 +17,7 @@
     <script type="text/javascript" src="../js/slide.js"></script>
 
    <script type="text/javascript">
-      var substeps = ['one', 'two'];
+      var substeps = ['one'];
 
       function step(cur_step) {
         d3.select("#" + cur_step).style("display", "inherit")
@@ -29,14 +29,20 @@
 	
     <h2>Complete Intersections</h2>
 
+
+
 	<div id='one', style='display:none;'>
-	The Betti diagram of a complete intersection $M = S/(f_1,\ldots,f_e)$ over the polynomial ring $S$ is determined by the degrees of its minimal generators.
-	</div>
-<br><br>
-	<div id='two', style='display:none;'>
-	<h1 class="small">Codimension One Example</h1>
+	<h1 class="small">Codimension Two Example</h1>
+<br><br>	
 	<p class="mytab"> 
-	If $S = \Bbbk[x]$ and $M = S/(f)$, then $$\beta(M) = \deg(f)\cdot\pi(0,\deg(f)).$$
+	If $S = \Bbbk[x,y]$ and $M = S/(f,g)$, then $\beta(M)$ is 
+	<p>
+<br>
+	<p>
+	\begin{align*}
+		& \deg(f)\deg(g)\cdot\pi(0,\deg(f),\deg(f)+\deg(g))\\
+				&\quad + \deg(f)\deg(g) \cdot\pi(0,\deg(g),\deg(f)+\deg(g)).
+		\end{align*}
 	<p>
 	</div>
 
