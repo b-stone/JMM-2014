@@ -17,7 +17,7 @@
     <script type="text/javascript" src="../js/slide.js"></script>
 
    <script type="text/javascript">
-      var substeps = ['one', 'two', 'three'];
+      var substeps = ['one','two'];
 
       function step(cur_step) {
         d3.select("#" + cur_step).style("display", "inherit")
@@ -27,12 +27,15 @@
   </head>
   <body>
 	
-    <h2>Boij-Soederberg Theory</h2>
+    <h2>Betti Tables</h2>
 
-	Let $S = \Bbbk[x_1,x_2,\ldots,x_d]$ (standard graded $\Bbbk$ algebra over a field $\Bbbk$).
+	<p id="one" style="display:none;">
+			Let $S = \Bbbk[x_1,x_2,\ldots,x_d]$.
+	</p>
 
-	The Betti diagram of an $S$-module $M$ is the table
-	
+	<div id="two" style="display:none;">
+	<h1 class="small"><i>Betti Diagram</i> of $S$-module $M$:</h1>
+	<br>
 <p style="font-size:28px">
 	$$\beta(M) = 
 	\begin{pmatrix}
@@ -41,11 +44,11 @@
 	 \vdots & \vdots && \vdots && \vdots  \\
 	 \beta_{0,j}(M) & \beta_{1,1+j}(M) & \cdots &  {\beta_{i,i+j}(M)} & \cdots & \beta_{j,n+j}(M) \\
 	 \vdots & \vdots && \vdots && \vdots 
-	\end{pmatrix}.$$
+	\end{pmatrix}$$
 </p>
-
-	where $\beta_{i,j}(M)$ is the number of minimal degree $j$ generators of $\text{Syz}_{i}(M)$.
-	
+<br>
+	Here $\beta_{i,j}(M)$ is the number of minimal degree $j$ generators of $\text{Syz}_{i}(M)$.
+	</div>
 
 
 	
