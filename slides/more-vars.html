@@ -15,9 +15,10 @@
     </style>
     <script type="text/javascript" src="../js/d3.v3.js"></script>
     <script type="text/javascript" src="../js/slide.js"></script>
+    <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
 
    <script type="text/javascript">
-      var substeps = ['one', 'two', 'three'];
+      var substeps = ['one'];
 
       function step(cur_step) {
         d3.select("#" + cur_step).style("display", "inherit")
@@ -29,12 +30,14 @@
 	
     <h2>When $d \geq 4$</h2>
 	
-	<p id='one', style='display:none;'>
-		Does the decomposition behave uniformly for all $d$?
-	</p>
 
-<p id='two', style='display:none; font-size:18px;'>
-		$\begin{pmatrix}	
+<div id='one', style='font-size:28px; display:none;'>
+<!--<p>
+	$I_1 = (x^3,y^4,u^5,v^7)$ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       $I_2 = (x,y^2,u^4,v^8)$&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ${I_3 = (x^4,y^5,u^7,v^9)}$
+</p>-->		
+<p style='font-size:19px;'>
+			$\stackrel{\large
+			\begin{pmatrix}	
 			8&\text{.}&\text{.}&\text{.}&\text{.}\\
 			\text{.}&\text{.}&\text{.}&\text{.}&\text{.}\\
 			\text{.}&\text{.}&\text{.}&\text{.}&\text{.}\\
@@ -57,11 +60,12 @@
 			\text{.}&\text{.}&\text{.}&\text{.}&\text{.}\\
 			\text{.}&\text{.}&\text{.}&\text{.}&\text{.}\\
 			\text{.}&\text{.}&\text{.}&\text{.}&8\\
-		\end{pmatrix}$
+		\end{pmatrix}}{\stackrel{\phantom 8}{\Large I_1 = (x^3,y^4,u^5,v^7)}}$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-		$\begin{pmatrix}
+		$\stackrel{\large
+			\begin{pmatrix}
 			12&1&\text{.}&\text{.}&\text{.}\\
 			\text{.}&3&2&\text{.}&\text{.}\\
 			\text{.}&\text{.}&\text{.}&\text{.}&\text{.}\\
@@ -74,11 +78,12 @@
 			\text{.}&\text{.}&\text{.}&\text{.}&\text{.}\\
 			\text{.}&\text{.}&12&11&\text{.}\\
 			\text{.}&\text{.}&\text{.}&12&12\\
-		\end{pmatrix}$
+		\end{pmatrix}}{\stackrel{\phantom 8}{\Large I_2 = (x,y^2,u^4,v^8)}}$
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-		$\begin{pmatrix}
+		$\stackrel{\large
+			\begin{pmatrix}
 			12&\text{.}&\text{.}&\text{.}&\text{.}\\
 			\text{.}&\text{.}&\text{.}&\text{.}&\text{.}\\
 			\text{.}&2&\text{.}&\text{.}&\text{.}\\
@@ -95,13 +100,10 @@
 			\text{.}&\text{.}&\text{.}&12&\text{.}\\
 			\text{.}&\text{.}&\text{.}&\text{.}&\text{.}\\
 			\text{.}&\text{.}&\text{.}&\text{.}&12\\
-		\end{pmatrix}$
+		\end{pmatrix}}{\stackrel{\phantom 8}{\Large I_3 = (x^4,y^5,u^7,v^9)}}$
 
 
 </p>
-
-<p id='three', style='display:none;'>
-	$I_1 = (x^3,y^4,u^5,v^7)$        $I_2 = (x,y^2,u^4,v^8)$      ${I_3 = (x^4,y^5,u^7,v^9)}$
-</p>	
+</div>
   </body>
 </html>
