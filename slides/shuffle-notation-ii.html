@@ -17,7 +17,7 @@
     <script type="text/javascript" src="../js/slide.js"></script>
 
    <script type="text/javascript">
-      var substeps = ['one', 'two', 'three'];
+      var substeps = ['one', 'two', 'three', 'four'];
 
       function step(cur_step) {
         d3.select("#" + cur_step).style("display", "inherit")
@@ -27,29 +27,24 @@
   </head>
   <body>
 	
-    <h2>Everyday I'm Shuffling</h2>
+    <h2>Shuffle Example</h2>
 
-<!-- <p style="font-size:18px"> -->
-	<p id="one", style='display:none;'>
-	Let ${\bf c} = (0,3,5)$ and ${\bf d} = (0,1,6)$ be degree sequences.
-	Take first differences: $$\Delta {\bf c} = (3,2), \Delta {\bf d} = (1,5).$$
-	</p>
+	<div id='one' style='display:none;'>
+	<h1 class='small'>Recap</h1>
+	$${\bf c} = (0,3,5), {\bf d} = (0,1,6), \Delta {\bf c} = (3,2), \Delta {\bf d} = (1,5).$$
+	</div>
 	
-	<div id="two", style='display:none;'>
-	The order-preserving permutations (or shuffles) of are
-	<p style='font-size:25px'>
+	<p id='two' style='font-size:25px; display:none;'>
 	\[
 	({\color{red} 3},{\color{red} 2},1,5),\, ({\color{red} 3},1,{\color{red} 2},5), \, ({\color{red} 3},1,5,{\color{red} 2}), \,  \, (1,{\color{red} 3},{\color{red} 2},5), \,(1,{\color{red} 3},5,{\color{red} 2}), (1,5,{\color{red} 3},{\color{red} 2}).
 	\]
 	</p>
-	</div>
-	<br>
+	
 	<div id="three", style='display:none;'>
-	Treat each shuffle as the first difference of a degree sequence starting with $c_0 + d_0 = 0$:
 	$$\mathsf\Sigma((3,2,1,5),c_0+d_0) = (0,3,5,6,11).$$
 	</div>
 	
-<!--	<div style='font-size:18px'>
+	<div id='four' style='display:none'>
 	<h1 class='small'>Example</h1>
 	\begin{align*}
 	   \pi({\bf c})\cdot\pi({\bf d}) 
@@ -58,6 +53,6 @@
 	         &\ \ + \pi(0,1,{\color{red} 4},9,{\color{red} {11}})  + \pi(0,1,6,{\color{red} 9},{\color{red} {11}}).
 	\end{align*}
 	</div>
--->
+
   </body>
 </html>
