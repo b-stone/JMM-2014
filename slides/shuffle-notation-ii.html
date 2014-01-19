@@ -17,7 +17,7 @@
     <script type="text/javascript" src="../js/slide.js"></script>
 
    <script type="text/javascript">
-      var substeps = ['one', 'two', 'three', 'four'];
+      var substeps = ['one', 'two'];
 
       function step(cur_step) {
         d3.select("#" + cur_step).style("display", "inherit")
@@ -32,19 +32,17 @@
 	<div id='one' style='display:none;'>
 	<h1 class='small'>Recap</h1>
 	$${\bf c} = (0,3,5), {\bf d} = (0,1,6), \Delta {\bf c} = (3,2), \Delta {\bf d} = (1,5).$$
-	</div>
 	
-	<p id='two' style='font-size:25px; display:none;'>
+	<p style='font-size:25px;'>
 	\[
 	({\color{red} 3},{\color{red} 2},1,5),\, ({\color{red} 3},1,{\color{red} 2},5), \, ({\color{red} 3},1,5,{\color{red} 2}), \,  \, (1,{\color{red} 3},{\color{red} 2},5), \,(1,{\color{red} 3},5,{\color{red} 2}), (1,5,{\color{red} 3},{\color{red} 2}).
 	\]
 	</p>
-	
-	<div id="three", style='display:none;'>
+
 	$$\mathsf\Sigma((3,2,1,5),c_0+d_0) = (0,3,5,6,11).$$
 	</div>
 	
-	<div id='four' style='display:none'>
+	<div id='two' style='display:none'>
 	<h1 class='small'>Example</h1>
 	\begin{align*}
 	   \pi({\bf c})\cdot\pi({\bf d}) 
